@@ -32,10 +32,16 @@ body {
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ffffff;
+  background-color: #42b983;
 }
 </style>
 
