@@ -1,14 +1,17 @@
 <template>
-  <div id="app">
+  <v-app>
     <div id="nav">
-      <router-link to="/">Distance Finder</router-link> |
-      <router-link to="/about">Spell Checker</router-link>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/dfinder">Distance Finder</router-link> |
+      <router-link to="/schecker">Spell Checker</router-link>
     </div>
-    <div v-if="alert.message" :class="`alert ${alert.type}`">
-      {{ alert.message }}
-    </div>
-    <router-view />
-  </div>
+    <v-content transition="slide-x-transition">
+      <v-alert :value="alert.on" v-bind:type="alert.type">
+        {{ alert.message }}
+      </v-alert>
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
 <style>
@@ -33,35 +36,6 @@ body {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
-
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.alert-info {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-}
-.alert-success {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-}
-.alert-warning {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-}
-.alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
 }
 </style>
 
