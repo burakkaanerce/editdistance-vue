@@ -17,10 +17,10 @@ This application is made for measuring the difference between two words by **Lev
    If that's the case, **D = A**, because after the A is calculated, since the distance has not changed, so D will be A.
 2. **Letter 1 != Letter 2:**
 
-   If that's the case, D = A + 1, because after the A is calculated, distance will be increased, so D = A + 1.
+   If that's the case, **D = A + 1**, because after the A is calculated, distance will be increased, so D = A + 1.
 3. **Length(Word 1) != Length(Word 2):**
 
-   If that's the case, Letter 1 = null or Letter 2 = null. Thus, the algorithm will control which is null. Therefore,
+   If that's the case, **Letter 1 = null** or **Letter 2 = null**. Thus, the algorithm will control which is null. Therefore,
    
    1. **if Letter 1 = null:**
        D = B + 1
