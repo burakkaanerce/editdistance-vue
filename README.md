@@ -39,7 +39,7 @@ This application is made for measuring the difference between two words by **Lev
 |  **T**  |  4  |  4  |  3  |  2  |  1  |  2  |  3  |
 |  **I**  |  5  |  5  |  4  |  3  |  2  |  2  |  3  |
 |  **N**  |  6  |  6  |  5  |  4  |  3  |  3  |  2  |
-|  **G**  |  7  |  7  |  6  |  5  |  4  |  4  |  3  |
+|  **G**  |  7  |  7  |  6  |  5  |  4  |  4  |  **3**  |
 
 Thus, **lev(sitting, kitten) = 3**
 
@@ -53,7 +53,7 @@ Thus, **lev(sitting, kitten) = 3**
 |  **B**  |  5  |  4  |  3  |  2  |  1  |
 |  **A**  |  6  |  5  |  4  |  3  |  2  |
 |  **L**  |  7  |  6  |  5  |  4  |  3  |
-|  **L**  |  8  |  7  |  6  |  5  |  4  |
+|  **L**  |  8  |  7  |  6  |  5  |  **4**  |
 
 Thus, **lev(football, foot) = 4**
 
